@@ -11,6 +11,9 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+build/
+dist/
+*.egg-info/
 .idea/
 .vscode/
 
@@ -24,3 +27,12 @@ logs/
 *.db
 Thumbs.db
 .DS_Store
+
+# Local planning, reports and preserved relocation originals
+计算机成员技术规划/
+第一阶段完成报告.md
+第二阶段查询工具完成报告.md
+程序全面检查报告.md
+迁移完成说明.md
+github-repo-created.png
+.local-migration/

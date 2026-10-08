@@ -1,0 +1,2 @@
+metric_id,company_id,metric_name,period,value,unit,currency,value_type,assumption_note,source_document_id,source_page,verification_status
+METRIC_M1,COMPANY_C1,revenue,2026-DEMO,100000,yuan,CNY,scenario,纯演示营收，不是实际企业财报,DEMO_PDF,2,pending

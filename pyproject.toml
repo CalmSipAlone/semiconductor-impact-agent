@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semiconductor-impact-agent"
+version = "0.1.0"
+description = "Local evidence ingestion and retrieval for semiconductor research"
+requires-python = ">=3.12"
+dependencies = ["pypdf==6.10.0"]
+
+[project.scripts]
+semiconductor-agent = "semiconductor_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+semiconductor_agent = ["schema.sql"]

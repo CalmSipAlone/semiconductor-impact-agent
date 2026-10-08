@@ -1,0 +1,3 @@
+entity_id,entity_type,name,grade,aliases,source_document_id,source_page,verification_status
+MATERIAL_M1,material,树脂样例,DEMO_GRADE,示例树脂|Demo resin,DEMO_PDF,1,pending
+PRODUCT_P1,product,光刻胶样例,DEMO_PRODUCT,示例光刻胶|Demo photoresist,DEMO_PDF,1,pending

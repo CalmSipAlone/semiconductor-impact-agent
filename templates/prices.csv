@@ -1,1 +1,1 @@
-material_id,material_name,grade,date,price,unit,currency,price_basis,source_url,source_document_id,source_page,verification_status
+material_id,material_name,grade,date,price,unit,currency,price_basis,source_url,source_document_id,source_page,verification_status,value_type,assumption_note

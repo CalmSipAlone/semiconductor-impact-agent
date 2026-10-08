@@ -1,0 +1,3 @@
+relation_id,upstream_id,upstream_name,downstream_id,downstream_name,relation_type,material_grade,valid_from,valid_to,source_document_id,source_page,verification_status
+RELATION_R1,MATERIAL_M1,树脂样例,PRODUCT_P1,光刻胶样例,used_to_make,DEMO_GRADE,2026-10-01,,DEMO_PDF,1,pending
+RELATION_R2,COMPANY_C1,光刻胶演示企业,PRODUCT_P1,光刻胶样例,produces,,2026-10-01,,DEMO_PDF,1,pending
