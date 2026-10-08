@@ -1,0 +1,26 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.idea/
+.vscode/
+
+# Local evidence, generated artifacts and runtime logs
+data/raw/
+data/processed/
+outputs/
+logs/
+*.sqlite
+*.sqlite3
+*.db
+Thumbs.db
+.DS_Store
