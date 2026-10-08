@@ -20,6 +20,7 @@
 | [计算机成员工作规划](docs/03-computer-science-work-plan.md) | 数据工程、后端、工具、联调、日志及交付步骤 |
 | [计划书审查](docs/04-plan-review.md) | 原文明确的内容、模糊点、文字冲突及核验事项 |
 | [团队范围讨论清单](docs/05-scope-discussion.md) | 核心研究问题、材料与企业范围、量化目标、传导机制 |
+| [顶尖会议论文与阅读指南](research/README.md) | 12篇ACL、EMNLP、ICLR、NeurIPS主会论文，附原文、用途和阅读分工 |
 | [资料模板](templates/) | 企业、材料关系、价格与计算参数的 CSV 表头 |
 
 ## 团队分工

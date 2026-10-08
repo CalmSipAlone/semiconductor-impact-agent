@@ -1,0 +1,98 @@
+[
+  {
+    "id": "react2023", "short_name": "ReAct", "title": "ReAct: Synergizing Reasoning and Acting in Language Models", "authors": ["Shunyu Yao", "Jeffrey Zhao", "Dian Yu", "Nan Du", "Izhak Shafran", "Karthik Narasimhan", "Yuan Cao"], "venue": "ICLR", "year": 2023, "track": "Main conference", "category": "智能体与工具", "priority": "优先", "readers": ["B", "D"],
+    "official_url": "https://openreview.net/forum?id=WE_vluYUL-X", "pdf_url": "https://arxiv.org/pdf/2210.03629v3", "code_url": "https://github.com/ysymyth/ReAct",
+    "verification_url": "https://github.com/ysymyth/ReAct", "verification_note": "作者代码仓库标注ICLR 2023；arXiv页面说明v3为ICLR camera-ready版本。OpenReview页面本次访问遇到浏览器验证，因此同时提供作者仓库与定版原文。",
+    "method": "将任务规划与外部动作交替进行，依据工具返回的信息继续处理任务。",
+    "project_use": "借鉴查询证据、读取价格、调用计算工具再生成报告的编排方式。",
+    "boundary": "论文实验不是半导体投研；采用这种编排不能证明产业因果关系或财务结论正确。"
+  },
+  {
+    "id": "rag2020", "short_name": "RAG", "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "authors": ["Patrick Lewis", "Ethan Perez", "Aleksandra Piktus", "Fabio Petroni", "Vladimir Karpukhin", "Naman Goyal", "Heinrich Küttler", "Mike Lewis", "Wen-tau Yih", "Tim Rocktäschel", "Sebastian Riedel", "Douwe Kiela"], "venue": "NeurIPS", "year": 2020, "track": "Main conference", "category": "证据检索与核验", "priority": "优先", "readers": ["B", "D"],
+    "official_url": "https://papers.nips.cc/paper_files/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html", "pdf_url": "https://proceedings.nips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf", "code_url": null,
+    "verification_url": "https://papers.nips.cc/paper_files/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html", "verification_note": "NeurIPS正式论文集标注NeurIPS 2020；arXiv作者页面也标注Accepted at NeurIPS 2020。",
+    "method": "结合外部文档检索与文本生成，使模型能够利用检索到的知识回答问题。",
+    "project_use": "为公告、财报和材料资料建立可检索证据库；保存文档及页码。",
+    "boundary": "原方法涉及模型训练；首版可借鉴检索与生成的分工，不必复现全部训练。检索到资料也不保证引用正确。"
+  },
+  {
+    "id": "finqa2021", "short_name": "FinQA", "title": "FinQA: A Dataset of Numerical Reasoning over Financial Data", "authors": ["Zhiyu Chen", "Wenhu Chen", "Charese Smiley", "Sameena Shah", "Iana Borova", "Dylan Langdon", "Reema Moussa", "Matt Beane", "Ting-Hao Huang", "Bryan Routledge", "William Yang Wang"], "venue": "EMNLP", "year": 2021, "track": "Main conference", "category": "财报与数值计算", "priority": "优先", "readers": ["A", "B", "D"],
+    "official_url": "https://aclanthology.org/2021.emnlp-main.300/", "pdf_url": "https://aclanthology.org/2021.emnlp-main.300.pdf", "code_url": "https://github.com/czyssrs/FinQA",
+    "verification_url": "https://aclanthology.org/2021.emnlp-main.300/", "verification_note": "ACL Anthology列入EMNLP 2021主会正式论文集。",
+    "method": "提供财报问答数据及专家标注的数值推理程序，用于研究多步金融计算。",
+    "project_use": "设计证据、输入参数、公式、计算程序和结果一起保存的计算模块；借鉴执行准确率评价。",
+    "boundary": "财报问答不等于事件冲击预测；材料成本和利润传导公式仍需团队给出依据。"
+  },
+  {
+    "id": "tatqa2021", "short_name": "TAT-QA", "title": "TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance", "authors": ["Fengbin Zhu", "Wenqiang Lei", "Youcheng Huang", "Chao Wang", "Shuo Zhang", "Jiancheng Lv", "Fuli Feng", "Tat-Seng Chua"], "venue": "ACL-IJCNLP", "year": 2021, "track": "Main conference, long papers", "category": "财报与数值计算", "priority": "优先", "readers": ["A", "B", "D"],
+    "official_url": "https://aclanthology.org/2021.acl-long.254/", "pdf_url": "https://aclanthology.org/2021.acl-long.254.pdf", "code_url": null,
+    "verification_url": "https://aclanthology.org/2021.acl-long.254/", "verification_note": "ACL Anthology列入ACL-IJCNLP 2021主会长论文集。",
+    "method": "联合财报表格与相关文本提取证据，再使用符号运算获得数值答案。",
+    "project_use": "帮助设计表格与正文关联、金额单位与数量级处理、混合证据数值问答。",
+    "boundary": "结构化财报问答数据与原始PDF解析是不同环节；不能将该数据集当成通用PDF解析器。"
+  },
+  {
+    "id": "structgpt2023", "short_name": "StructGPT", "title": "StructGPT: A General Framework for Large Language Model to Reason over Structured Data", "authors": ["Jinhao Jiang", "Kun Zhou", "Zican Dong", "Keming Ye", "Xin Zhao", "Ji-Rong Wen"], "venue": "EMNLP", "year": 2023, "track": "Main conference", "category": "智能体与工具", "priority": "优先", "readers": ["B", "D"],
+    "official_url": "https://aclanthology.org/2023.emnlp-main.574/", "pdf_url": "https://aclanthology.org/2023.emnlp-main.574.pdf", "code_url": "https://github.com/RUCaibox/StructGPT",
+    "verification_url": "https://aclanthology.org/2023.emnlp-main.574/", "verification_note": "ACL Anthology列入EMNLP 2023主会正式论文集；作者字段沿用论文集元数据。",
+    "method": "通过专门接口读取表格、数据库和知识图谱，迭代执行读取与推理。",
+    "project_use": "直接参考B向D提供关系查询、价格查询和参数查询工具的接口设计。",
+    "boundary": "模型应读取已定义的接口；工具输出的事实来源、单位检查和权限仍需独立实现。"
+  },
+  {
+    "id": "alce2023", "short_name": "ALCE", "title": "Enabling Large Language Models to Generate Text with Citations", "authors": ["Tianyu Gao", "Howard Yen", "Jiatong Yu", "Danqi Chen"], "venue": "EMNLP", "year": 2023, "track": "Main conference", "category": "证据检索与核验", "priority": "优先", "readers": ["A", "B", "D"],
+    "official_url": "https://aclanthology.org/2023.emnlp-main.398/", "pdf_url": "https://aclanthology.org/2023.emnlp-main.398.pdf", "code_url": "https://github.com/princeton-nlp/ALCE",
+    "verification_url": "https://aclanthology.org/2023.emnlp-main.398/", "verification_note": "ACL Anthology列入EMNLP 2023主会正式论文集。",
+    "method": "研究检索证据并生成带引用文本的系统，评估答案正确性与引用质量等维度。",
+    "project_use": "评价报告关键结论是否有引用、引用能否支持结论，而不只检查有没有链接。",
+    "boundary": "引用评价不能替代材料知识和财务逻辑审核；原实验不覆盖本项目的成本传导。"
+  },
+  {
+    "id": "convfinqa2022", "short_name": "ConvFinQA", "title": "ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering", "authors": ["Zhiyu Chen", "Shiyang Li", "Charese Smiley", "Zhiqiang Ma", "Sameena Shah", "William Yang Wang"], "venue": "EMNLP", "year": 2022, "track": "Main conference", "category": "财报与数值计算", "priority": "扩展", "readers": ["A", "B", "D"],
+    "official_url": "https://aclanthology.org/2022.emnlp-main.421/", "pdf_url": "https://aclanthology.org/2022.emnlp-main.421.pdf", "code_url": "https://github.com/czyssrs/ConvFinQA",
+    "verification_url": "https://aclanthology.org/2022.emnlp-main.421/", "verification_note": "ACL Anthology列入EMNLP 2022主会正式论文集。",
+    "method": "研究金融对话中跨轮次延续的多步数值推理，并比较神经符号方法与提示方法。",
+    "project_use": "设计用户修改涨价幅度、成本占比后重新计算的状态管理，明确保留和更新哪些参数。",
+    "boundary": "先完成单次分析，再考虑多轮对话；历史假设不能悄悄覆盖本轮输入。"
+  },
+  {
+    "id": "tog2024", "short_name": "Think-on-Graph", "title": "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph", "authors": ["Jiashuo Sun", "Chengjin Xu", "Lumingyuan Tang", "Saizhuo Wang", "Chen Lin", "Yeyun Gong", "Lionel Ni", "Heung-Yeung Shum", "Jian Guo"], "venue": "ICLR", "year": 2024, "track": "Main conference", "category": "图谱与多跳关系", "priority": "扩展", "readers": ["B", "C", "D", "E"],
+    "official_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/10a6bdcabbd5a3d36b760daa295f63c1-Abstract-Conference.html", "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/10a6bdcabbd5a3d36b760daa295f63c1-Paper-Conference.pdf", "code_url": "https://github.com/IDEA-FinAI/ToG",
+    "verification_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/10a6bdcabbd5a3d36b760daa295f63c1-Abstract-Conference.html", "verification_note": "ICLR正式论文集标注ICLR 2024 Conference；作者字段沿用论文集元数据。",
+    "method": "让大模型在知识图谱上逐步探索实体和关系，寻找支持答案的多跳路径。",
+    "project_use": "借鉴从树脂到光刻胶再到相关企业的路径检索，并将每条关系的证据返回给报告模块。",
+    "boundary": "图谱可达性不等于经济因果效应，更不能直接作为成本转嫁系数。"
+  },
+  {
+    "id": "gretriever2024", "short_name": "G-Retriever", "title": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering", "authors": ["Xiaoxin He", "Yijun Tian", "Yifei Sun", "Nitesh V. Chawla", "Thomas Laurent", "Yann LeCun", "Xavier Bresson", "Bryan Hooi"], "venue": "NeurIPS", "year": 2024, "track": "Main conference", "category": "图谱与多跳关系", "priority": "扩展", "readers": ["B", "C", "D"],
+    "official_url": "https://proceedings.nips.cc/paper_files/paper/2024/hash/efaf1c9726648c8ba363a5c927440529-Abstract-Conference.html", "pdf_url": "https://proceedings.nips.cc/paper_files/paper/2024/file/efaf1c9726648c8ba363a5c927440529-Paper-Conference.pdf", "code_url": null,
+    "verification_url": "https://proceedings.nips.cc/paper_files/paper/2024/hash/efaf1c9726648c8ba363a5c927440529-Abstract-Conference.html", "verification_note": "NeurIPS正式论文集标注NeurIPS 2024 Main Conference Track。",
+    "method": "从带文本属性的图中检索相关部分，再进行图问答和生成。",
+    "project_use": "借鉴按任务取出相关产业子图及证据，减少向模型传入整张图的开销。",
+    "boundary": "原方法包含图模型及微调；首版可采用简单子图查询，不能声称复现了论文方法。"
+  },
+  {
+    "id": "selfrag2024", "short_name": "Self-RAG", "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection", "authors": ["Akari Asai", "Zeqiu Wu", "Yizhong Wang", "Avi Sil", "Hannaneh Hajishirzi"], "venue": "ICLR", "year": 2024, "track": "Main conference", "category": "证据检索与核验", "priority": "扩展", "readers": ["A", "D"],
+    "official_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/25f7be9694d7b32d5cc670927b8091e1-Abstract-Conference.html", "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/25f7be9694d7b32d5cc670927b8091e1-Paper-Conference.pdf", "code_url": null,
+    "verification_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/25f7be9694d7b32d5cc670927b8091e1-Abstract-Conference.html", "verification_note": "ICLR正式论文集标注ICLR 2024 Conference；作者字段沿用论文集元数据。",
+    "method": "训练模型按需检索，并借助反思标记评价资料和生成内容。",
+    "project_use": "借鉴检索必要性、证据相关性、结论支持情况等检查维度。",
+    "boundary": "仅增加一个自检Prompt不等于实现Self-RAG；原方法需要训练，且自检不能替代外部证据。"
+  },
+  {
+    "id": "layoutlmv22021", "short_name": "LayoutLMv2", "title": "LayoutLMv2: Multi-modal Pre-training for Visually-rich Document Understanding", "authors": ["Yang Xu", "Yiheng Xu", "Tengchao Lv", "Lei Cui", "Furu Wei", "Guoxin Wang", "Yijuan Lu", "Dinei Florencio", "Cha Zhang", "Wanxiang Che", "Min Zhang", "Lidong Zhou"], "venue": "ACL-IJCNLP", "year": 2021, "track": "Main conference, long papers", "category": "文档与关系抽取", "priority": "扩展", "readers": ["B", "D"],
+    "official_url": "https://aclanthology.org/2021.acl-long.201/", "pdf_url": "https://aclanthology.org/2021.acl-long.201.pdf", "code_url": null,
+    "verification_url": "https://aclanthology.org/2021.acl-long.201/", "verification_note": "ACL Anthology列入ACL-IJCNLP 2021主会长论文集。",
+    "method": "联合文档文本、版面位置和图像信息学习文档表示。",
+    "project_use": "理解扫描件、复杂表格中版面信息的作用，规划必要的OCR及字段定位能力。",
+    "boundary": "不是开箱即用的任意财报解析器；需要OCR、任务适配等环节，首版优先处理文本型PDF。"
+  },
+  {
+    "id": "scirex2020", "short_name": "SciREX", "title": "SciREX: A Challenge Dataset for Document-Level Information Extraction", "authors": ["Sarthak Jain", "Madeleine van Zuylen", "Hannaneh Hajishirzi", "Iz Beltagy"], "venue": "ACL", "year": 2020, "track": "Main conference", "category": "文档与关系抽取", "priority": "扩展", "readers": ["B", "C", "D", "E"],
+    "official_url": "https://aclanthology.org/2020.acl-main.670/", "pdf_url": "https://aclanthology.org/2020.acl-main.670.pdf", "code_url": null,
+    "verification_url": "https://aclanthology.org/2020.acl-main.670/", "verification_note": "ACL Anthology列入ACL 2020主会正式论文集。",
+    "method": "研究全文范围内的实体与多元关系抽取，包括跨句、跨段的关联。",
+    "project_use": "为材料资料整理设计实体、别名、关系及证据标注；提醒关系可能需要全文上下文。",
+    "boundary": "数据来自科学论文，不是半导体供应链；本项目仍需定义自己的关系类型并人工核验。"
+  }
+]
